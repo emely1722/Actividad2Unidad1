@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title= "Resultado";
+}
+
+<h2>Resultado de la Operación</h2>
+
+@if (ViewBag.Mensaje != null)
+{
+    <p>@ViewBag.Mensaje</p>
+}
+else
+{
+    <p>Operación: @ViewBag.Operacion</p>
+    <p>Resultado: @ViewBag.Resultado</p>
+}

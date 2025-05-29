@@ -1,0 +1,14 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Formulario";
+}
+
+<h2>Escriba su nombre</h2>
+
+<form asp-action="Saludar" asp-controller="Bienvenida" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nom" name="nom" required />
+    <button type="submit">Enviar</button>
+</form>

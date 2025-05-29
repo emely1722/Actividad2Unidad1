@@ -1,0 +1,15 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Verificar";
+}
+
+<h2>Coloque un número</h2>
+
+<form asp-action="VerificarNumeroPerfecto" asp-controller="NumeroPerfecto" method="post">
+    <label for="num1">Número:</label>
+    <input type="number" id="num1" name="num1" required min="1" />
+    <button type="submit">Enter</button>
+</form>
+ 

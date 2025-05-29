@@ -1,0 +1,23 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title= "Login";
+}
+
+<h2>Iniciar Sesión</h2>
+
+<form asp-action="ValidarLogin" asp-controller="Login" method="post">
+    <label for="user">Usuario:</label>
+    <input type="text" id="user" name="user" required />
+
+    <label for="contraseña">Contraseña:</label>
+    <input type="password" id="contraseña" name="contraseña" required />
+
+    <button type="submit">Enter</button>
+</form>
+
+@if (ViewBag.Mensaje != null)
+{
+    <p>@ViewBag.Mensaje</p>
+}
